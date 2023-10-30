@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Button from 'react-bootstrap/Button';
+import odontologia from '/Users/andersongh/react-app/my/src/odontologia.jpg';
+import Navbar from '/Users/andersongh/react-app/my/src/Navbar.js';
+import EnviarMail from '/Users/andersongh/react-app/my/src/EnviarMail.js';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div> 
+        <Navbar />
+        <EnviarMail />
+      </div>
+      </>
   );
 }
 
